@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Website War Thunder</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; }
+    nav { background: #333; padding: 10px; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; cursor: pointer; }
+    section { display: none; padding: 20px; }
+    section.active { display: block; }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="6.jpg" alt="Logo War Thunder" height="40">
+    <a onclick="showPage('home')">Trang Chính</a>
+    <a onclick="showPage('sub1')">Trang Con 1</a>
+    <a onclick="showPage('sub2')">Trang Con 2</a>
+    <a onclick="showPage('sub3')">Trang Con 3</a>
+  </nav>
+
+  <!-- Trang chính -->
+  <section id="home" class="active">
+    <h1>Chào mừng đến với War Thunder</h1>
+    <img src="3.jpg" width="600">
+  </section>
+
+  <!-- Trang con 1 -->
+  <section id="sub1">
+    <h2>Trang Con 1</h2>
+    <img src="1.jpg" width="500"><br>
+    <a onclick="showPage('sub1a')">Trang Con 1A</a> |
+    <a onclick="showPage('sub1b')">Trang Con 1B</a> |
+    <a onclick="showPage('sub1c')">Trang Con 1C</a>
+  </section>
+
+  <!-- Trang con 1A -->
+  <section id="sub1a">
+    <h3>Trang Con 1A</h3>
+    <img src="11.jpg" width="400">
+  </section>
+
+  <!-- Trang con 1B -->
+  <section id="sub1b">
+    <h3>Trang Con 1B</h3>
+    <img src="12.jpg" width="400">
+  </section>
+
+  <!-- Trang con 1C -->
+  <section id="sub1c">
+    <h3>Trang Con 1C</h3>
+    <img src="13.jpg" width="400">
+  </section>
+
+  <!-- Trang con 2 -->
+  <section id="sub2">
+    <h2>Trang Con 2</h2>
+    <img src="1316647 (2).png" width="500"><br>
+    <a onclick="showPage('sub2a')">Trang Con 2A</a> |
+    <a onclick="showPage('sub2b')">Trang Con 2B</a> |
+    <a onclick="showPage('sub2c')">Trang Con 2C</a>
+  </section>
+
+  <!-- Trang con 2A -->
+  <section id="sub2a">
+    <h3>Trang Con 2A</h3>
+    <img src="4.jpg" width="400">
+  </section>
+
+  <!-- Trang con 2B -->
+  <section id="sub2b">
+    <h3>Trang Con 2B</h3>
+    <img src="5.jpg" width="400">
+  </section>
+
+  <!-- Trang con 2C -->
+  <section id="sub2c">
+    <h3>Trang Con 2C</h3>
+    <img src="7.jpg" width="400">
+  </section>
+
+  <!-- Trang con 3 -->
+  <section id="sub3">
+    <h2>Trang Con 3</h2>
+    <img src="warthunder2.png" width="500"><br>
+    <a onclick="showPage('sub3a')">Trang Con 3A</a> |
+    <a onclick="showPage('sub3b')">Trang Con 3B</a> |
+    <a onclick="showPage('sub3c')">Trang Con 3C</a>
+  </section>
+
+  <! Trang con 3A>
+  <section id="sub3a">
+    <h3>Trang Con 3A</h3>
+    <img src="8.jpg" width="400">
+  </section>
+
+  <!-- Trang con 3B -->
+  <section id="sub3b">
+    <h3>Trang Con 3B</h3>
+    <img src="10.jpg" width="400">
+  </section>
+
+  <!-- Trang con 3C -->
+  <section id="sub3c">
+    <h3>Trang Con 3C</h3>
+    <img src="9.jpg" width="400">
+  </section>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
